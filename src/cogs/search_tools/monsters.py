@@ -42,7 +42,7 @@ class Monsters(commands.Cog, name='monsters'):
         embed, view = EmbedFactory().create(
             title=title,
             description=description,
-            thumbnail_url=f"https://oldschool.runescape.wiki{info['Image']}",
+            thumbnail_url=f"https://runescape.wiki{info['Image']}",
             button_label='Visit Page',
             button_url=f'{BASE_URL}{query}'
         )

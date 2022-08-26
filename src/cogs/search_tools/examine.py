@@ -37,12 +37,12 @@ class Examine(commands.Cog, name='examine'):
         embed = EmbedFactory().create(title=title, description=f'**Examine**: {examine_text}', thumbnail_url=thumbnail_url)
         return(embed)
 
-    @commands.command(name='examine', description='Fetch the examine text from the official Old School RuneScape wikipedia.')
+    @commands.command(name='examine', description='Fetch the examine text from the official RuneScape 3 wikipedia.')
     async def examine(self, ctx: Context, *, query: str) -> None:
         embed = self.fetch_examine_text(query)
         await ctx.send(embed=embed)
 
-    @commands.slash_command(name='examine', description='Fetch the examine text from the official Old School RuneScape wikipedia.', options=[
+    @commands.slash_command(name='examine', description='Fetch the examine text from the official RuneScape 3 wikipedia.', options=[
             Option(
                 name="query",
                 description="Search for an item.",

@@ -42,7 +42,7 @@ class Price(commands.Cog, name='price'):
             description=api_data['item']['description'],
             thumbnail_url=api_data['item']['icon_large'],
             button_label='Real-Time Prices',
-            button_url=f'https://prices.runescape.wiki/osrs/item/{item_id}'
+            button_url=f'https://secure.runescape.com/m=itemdb_rs/{item_id}'
         )
         embed.add_field(name='Current Value', value=value_price, inline=True)
         embed.add_field(name='Exchange Price', value=exchange_price, inline=True)
@@ -59,12 +59,12 @@ class Price(commands.Cog, name='price'):
 
         return(embed, view, file)
 
-    @commands.command(name='price', description='Fetch guide price data from the official Old School RuneScape wikipedia.')
+    @commands.command(name='price', description='Fetch guide price data from the official RuneScape 3 wikipedia.')
     async def price(self, ctx: Context, *, query: str) -> None:
         embed, view, file = self.fetch_price_data(query)
         await ctx.send(embed=embed, view=view, file=file)
 
-    @commands.slash_command(name='price', description='Fetch guide price data from the official Old School RuneScape wikipedia.', options=[
+    @commands.slash_command(name='price', description='Fetch guide price data from the official RuneScape 3 wikipedia.', options=[
             Option(
                 name="query",
                 description="Search for an item.",

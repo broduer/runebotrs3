@@ -1,8 +1,8 @@
 [tool.poetry]
-name = "runebot"
+name = "runebotrs3"
 version = "1.0.2"
 description = ""
-authors = ["Tarran Prior <Tarranprior@protonmail.com>"]
+authors = ["Beau aka Broduer"]
 
 [tool.poetry.dependencies]
 python = "^3.8"

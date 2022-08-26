@@ -1,6 +1,6 @@
 
 <p align="center"><img src="https://github.com/tarranprior/runebot/blob/main/assets/banner.png" /></p>
-<h1 align="center">Runebot</h1>
+<h1 align="center">RunebotRS3</h1>
 
 <a href="https://github.com/tarranprior/runebot/releases"><p align="center">![Version](https://img.shields.io/badge/Latest%20Version-v1.0.2-7289da?style=for-the-badge)</a>
 <a href="https://www.python.org/downloads/">![Python](https://img.shields.io/badge/made%20with-python%203.8-7289da?style=for-the-badge&logo=python&logoColor=ffdd54)</a>
@@ -9,7 +9,7 @@
 <p align="center"><a href="#introduction">Introduction</a> • <a href="#key-features">Features</a> • <a href="#prerequisites">Prerequisites</a> • <a href="#tools">Tools</a> • <a href="#disclaimer">Disclaimer</a> • <a href="#installation">Installation</a> • <a href="#usage">Usage</a> • <a href="#support">Support</a> • <a href="#license">License</a> • <a href="#references">References</a></p>
 
 ## Introduction
-Runebot is a feature-rich Discord tool which scrapes, pulls and displays information about Old School RuneScape. Built with Python and Beautiful Soup 4.
+RunebotRS3 is a feature-rich Discord tool that was based wholely on OSRS Runebot which scrapes, pulls and displays information about Old School RuneScape. Built with Python and Beautiful Soup 4.
 
 ## Key Features
 - Search for items and equipment, activities, bosses and more directly on discord.

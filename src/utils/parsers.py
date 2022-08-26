@@ -105,7 +105,7 @@ def parse_minigame_icon(page_content, query: str) -> None:
         for icon in table.find_all('img'):
             if query in search_query(icon['alt']):
                 icon_url = icon['src']
-                return(f'https://oldschool.runescape.wiki{icon_url}')
+                return(f'https://runescape.wiki/{icon_url}')
 
 '''
 Parses a list of options for queries that may refer to several articles.
@@ -170,7 +170,7 @@ Parses a thumbnail URL from an Old School RuneScape wikipedia page.
 def parse_thumbnail(page_content) -> None:
     try:
         img_src = page_content.find('div', class_='floatleft').find('a', class_='image').find('img').attrs['src']
-        thumbnail_url = f'https://oldschool.runescape.wiki/{img_src}'
+        thumbnail_url = f'https://runescape.wiki/{img_src}'
     except:
         thumbnail_url = None
     return(thumbnail_url)

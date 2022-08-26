@@ -10,6 +10,6 @@ GRAPHAPI_URL = load_configuration()['urls']['graphapi_url']
 HEADERS = load_configuration()['headers']
 
 # COMMON THUMBNAILS
-BUCKET_ICO = 'https://oldschool.runescape.wiki/images/thumb/Weird_gloop_detail.png/75px-Weird_gloop_detail.png?94769'
-QUEST_ICO = 'https://oldschool.runescape.wiki/images/thumb/Quests.png/130px-Quests.png?f5120'
-MINIGAME_ICO = 'https://oldschool.runescape.wiki/images/thumb/Minigames.png/120px-Minigames.png?d639f'
+BUCKET_ICO = 'https://runescape.wiki/images/thumb/Weird_gloop_detail.png/100px-Weird_gloop_detail.png?b452e'
+QUEST_ICO = 'https://runescape.wiki/images/Quest_Icon_Crest.png?98216'
+MINIGAME_ICO = 'https://runescape.wiki/images/Manual_Activites.png?41df1'

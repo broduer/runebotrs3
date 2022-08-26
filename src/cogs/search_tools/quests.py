@@ -53,7 +53,7 @@ class Quests(commands.Cog, name='quests'):
         embed.add_field(name='Rewards', value=f"Click [here]({BASE_URL}{title.replace(' ', '_')}#Rewards) for a full list of rewards.", inline=True)
 
         if check_mode('hide_scrolls') == False:
-            embed.set_image(url=f"https://oldschool.runescape.wiki{quest_rewards['Reward scroll']}")
+            embed.set_image(url=f"https://runescape.wiki/w/{quest_rewards['Reward scroll']}")
 
         return(embed, view)
     
